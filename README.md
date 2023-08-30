@@ -1,13 +1,14 @@
 # React Stopwatch App 🕰️
 
 A pixel-perfect recreation of Apple's stopwatch, built using React with TypeScript. Powered by Vite as the build tool.
-App Screenshot // replace 'path-to-your-screenshot.png' with your actual screenshot path if you have one
+
+![Alt text](image.png)
 
 ## Features
 
 Start, stop, and reset the stopwatch.
 Record lap times.
-Sleek and intuitive design mimicking Apple's native stopwatch.
+A sleek and intuitive design mimicking Apple's native stopwatch.
 
 ## Technologies Used
 
