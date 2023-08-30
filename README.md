@@ -1,57 +1,64 @@
 # React Stopwatch App 🕰️
 
 A pixel-perfect recreation of Apple's stopwatch, built using React with TypeScript. Powered by Vite as the build tool.
-
 App Screenshot // replace 'path-to-your-screenshot.png' with your actual screenshot path if you have one
-Features
 
-    Start, stop, and reset the stopwatch.
-    Record lap times.
-    Sleek and intuitive design mimicking Apple's native stopwatch.
+## Features
 
-Technologies Used
+Start, stop, and reset the stopwatch.
+Record lap times.
+Sleek and intuitive design mimicking Apple's native stopwatch.
 
-    React: For building the user interface.
-    TypeScript: Adds static typing to JavaScript ensuring a higher quality codebase.
-    Vite: A build tool that offers faster and leaner development experience for modern web projects.
+## Technologies Used
 
-Getting Started
-Prerequisites
+### React:
 
-    Node.js (version 14 or higher recommended)
-    npm (usually comes bundled with Node.js)
+For building the user interface.
 
-Installation
+### TypeScript:
 
-    Clone the repository:
+Adds static typing to JavaScript ensuring a higher quality codebase.
 
-    bash
+### Vite:
 
+A build tool that offers faster and leaner development experience for modern web projects.
+
+## Getting Started Prerequisites
+
+- Node.js (version 14 or higher recommended)
+- npm (usually comes bundled with Node.js)
+
+## Installation
+
+Clone the repository:
+
+```shell
 git clone https://github.com/your-username/react-stopwatch-app.git
+```
 
 Navigate to the project directory:
 
-bash
-
+```shell
 cd react-stopwatch-app
+```
 
 Install the dependencies:
 
-bash
-
+```shell
 npm install
+```
 
 Start the development server:
 
-bash
+```shell
+npm run dev
+```
 
-    npm run dev
+The app should now be running on http://localhost:3000 (or another port if you've configured it differently).
 
-    The app should now be running on http://localhost:3000 (or another port if you've configured it differently).
+## Usage
 
-Usage
-
-    Click "Start" to start the stopwatch.
-    Click "Lap" to record a lap time.
-    Click "Stop" to stop the stopwatch.
-    When stopped, click "Reset" to reset the stopwatch and clear all lap times.
+- Click "Start" to start the stopwatch.
+- Click "Lap" to record a lap time.
+- Click "Stop" to stop the stopwatch.
+- When stopped, click "Reset" to reset the stopwatch and clear all lap times.
