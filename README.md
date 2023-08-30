@@ -1,27 +1,57 @@
-# React + TypeScript + Vite
+# React Stopwatch App 🕰️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect recreation of Apple's stopwatch, built using React with TypeScript. Powered by Vite as the build tool.
 
-Currently, two official plugins are available:
+App Screenshot // replace 'path-to-your-screenshot.png' with your actual screenshot path if you have one
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Start, stop, and reset the stopwatch.
+    Record lap times.
+    Sleek and intuitive design mimicking Apple's native stopwatch.
 
-## Expanding the ESLint configuration
+Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+    React: For building the user interface.
+    TypeScript: Adds static typing to JavaScript ensuring a higher quality codebase.
+    Vite: A build tool that offers faster and leaner development experience for modern web projects.
 
-- Configure the top-level `parserOptions` property like this:
+Getting Started
+Prerequisites
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+    Node.js (version 14 or higher recommended)
+    npm (usually comes bundled with Node.js)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Installation
+
+    Clone the repository:
+
+    bash
+
+git clone https://github.com/your-username/react-stopwatch-app.git
+
+Navigate to the project directory:
+
+bash
+
+cd react-stopwatch-app
+
+Install the dependencies:
+
+bash
+
+npm install
+
+Start the development server:
+
+bash
+
+    npm run dev
+
+    The app should now be running on http://localhost:3000 (or another port if you've configured it differently).
+
+Usage
+
+    Click "Start" to start the stopwatch.
+    Click "Lap" to record a lap time.
+    Click "Stop" to stop the stopwatch.
+    When stopped, click "Reset" to reset the stopwatch and clear all lap times.
