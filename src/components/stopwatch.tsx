@@ -4,7 +4,7 @@ const Stopwatch: React.FC = () => {
   const [isRunning, setIsRunning] = useState<boolean>(false)
   const [elapsedTime, setElapsedTime] = useState<number>(0)
   const [lapTime, setLapTime] = useState<number>(0)
-  const [laps, setLaps] = useState<number[]>([])
+  const [laps, setLaps] = useState<lapItem[]>([])
   const [counter, setCounter] = useState<number>(1)
 
   interface lapItem {
@@ -33,7 +33,7 @@ const Stopwatch: React.FC = () => {
 
   const handleLap = () => {
     if (isRunning) {
-      setLaps([lapTime, ...laps])
+      setLaps([{ lap: counter, time: lapTime }, ...laps])
       setLapTime(0)
       setCounter((prev) => prev + 1)
     } else {
@@ -86,14 +86,17 @@ const Stopwatch: React.FC = () => {
       <div className="laps-container">
         <ul className="laps-table">
           {(isRunning || elapsedTime > 0) && (
-            <li className="lap">{`Lap ${counter} ${formatTime(lapTime)}`}</li>
+            <li className="lap">
+              {" "}
+              <span>{`Lap ${counter}`}</span>
+              <span> {` ${formatTime(lapTime)}`}</span>
+            </li>
           )}
           {laps.map((lap, index) => (
-            <div className="laps">
-              <li className="lap" key={index}>
-                {`Lap ${index + 1} ${formatTime(lap)}`}
-              </li>
-            </div>
+            <li className="lap" key={index}>
+              <span>{`Lap ${lap.lap}`}</span>
+              <span> {` ${formatTime(lap.time)}`}</span>
+            </li>
           ))}
         </ul>
       </div>
